@@ -1,12 +1,18 @@
 import React from "react";
 import Image from "next/image";
-import { colorMap } from "@/utils/colorMaps";
-import { summaryItemClasses } from "@/utils/cardClasses";
+
+const colorMap = {
+  "primary-lightRed": "text-primary-lightRed bg-primary-lightRed",
+  "primary-orangeyYellow":
+    "text-primary-orangeyYellow bg-primary-orangeyYellow",
+  "primary-greenTeal": "text-primary-greenTeal bg-primary-greenTeal",
+  "primary-cobaltBlue": "text-primary-cobaltBlue bg-primary-cobaltBlue",
+};
 
 const SummaryItem = ({ item }) => (
     <div
       key={item.category}
-      className={`${summaryItemClasses} ${colorMap[item.color]} ${item.bgColor}`}
+      className={`flex justify-between items-center gap-x-4 mt-4 p-3 rounded-xl bg-opacity-5 ${colorMap[item.color]} ${item.bgColor}`}
     >
       <div className="flex gap-x-2 items-center">
         <Image

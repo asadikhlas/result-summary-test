@@ -2,16 +2,15 @@ import React from "react";
 import data from "../../../data/data.json";
 import SummaryItem from "../SummaryItem";
 import ScoreDisplay from "../ScoreDisplay";
-import { buttonClasses, cardClasses, firstCardClasses } from "@/utils/cardClasses";
 
 const Card = () => {
   const score = 76; 
   const totalScore = 100;
 
   return (
-    <div className={cardClasses}>
+    <div className="flex flex-col md:flex md:flex-row rounded-3xl md:overflow-hidden md:w-[800px] md:h-[520px] bg-white shadow-2xl">
       {/* First card */}
-      <div className={firstCardClasses}>
+      <div className="flex flex-col p-4 md:p-0 flex-1 justify-center items-center gap-y-9 md:rounded-3xl rounded-b-3xl bg-gradient-to-b from-gradient-lightSlateBlue to-gradient-lightRoyalBlue">
         <h2 className="text-neutral-lightLavender md:text-2xl text-xl font-bold">Your Result</h2>
         <ScoreDisplay score={score} total={totalScore} />
         <div className="flex flex-col justify-center items-center gap-4">
@@ -31,7 +30,7 @@ const Card = () => {
             <SummaryItem key={item.category} item={item} />
           ))}
 
-          <button className={buttonClasses}>
+          <button className="bg-black/80 text-white rounded-3xl w-full py-4 mt-10 font-semibold hover:bg-gradient-lightRoyalBlue">
             Continue
           </button>
         </div>

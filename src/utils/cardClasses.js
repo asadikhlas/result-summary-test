@@ -1,5 +1,0 @@
-export const cardClasses = "flex flex-col md:flex md:flex-row rounded-3xl md:overflow-hidden md:w-[800px] md:h-[520px] bg-white shadow-2xl"
-export const firstCardClasses = "flex flex-col p-4 md:p-0 flex-1 justify-center items-center gap-y-9 md:rounded-3xl rounded-b-3xl bg-gradient-to-b from-gradient-lightSlateBlue to-gradient-lightRoyalBlue"
-export const buttonClasses = "bg-black/80 text-white rounded-3xl w-full py-4 mt-10 font-semibold hover:bg-gradient-lightRoyalBlue"
-export const scoreDisplayClasses = "flex flex-col justify-center items-center gap-3 rounded-full w-52 aspect-[1/1] bg-gradient-to-b from-gradient-violetBlue"
-export const summaryItemClasses = "flex justify-between items-center gap-x-4 mt-4 p-3 rounded-xl bg-opacity-5"
